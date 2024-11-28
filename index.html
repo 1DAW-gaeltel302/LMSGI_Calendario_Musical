@@ -1,0 +1,35 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>tarea 7, Iframes.</title>
+            <!--
+            <iframe src="https://www.youtube.com/embed?v=+&list=PLTJ4GiafSk5f3J8GFzqEY-56vNU6Xu13y&amp&index=INDICE;autoplay=1&amp;modestbranding=1&amp;fs=2" frameborder="0" width="640" height="385" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
+-->
+</head>
+<body style="text-align: center;">
+	<header><h1>tarea 7, Iframes.</h1></header>        	
+        <div>
+			<h1>VIDEO</h1>
+			<iframe id="video" src="https://www.youtube.com/embed?v=+&list=PLTJ4GiafSk5f3J8GFzqEY-56vNU6Xu13y&amp&index=6;autoplay=1&amp;modestbranding=1&amp;fs=2" frameborder="0" width="640" height="385" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
+		</div>
+		<div>
+			<iframe frameborder="0" scrolling="no" width="100%" height="100%"src="../images/" name="imgbox" id="imgbox">
+</iframe>
+		</div>
+		</body>
+</html>
+<script id="diaRandom">
+	var now = new Date();
+	var start = new Date(now.getFullYear(), 0, 0);
+	var diff = now - start;
+	var oneDay = 1000 * 60 * 60 * 24;
+	var day = Math.floor(diff / oneDay);
+    var overflow = Math.trunc(day)
+    if(overflow > 200){overflow = overflow - 200}
+document.getElementById("video").src = "https://www.youtube.com/embed?v=+&list=PLTJ4GiafSk5f3J8GFzqEY-56vNU6Xu13y&amp&index=" + overflow + ";autoplay=1&amp;modestbranding=1&amp;fs=2";
+</script>
